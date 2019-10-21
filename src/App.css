@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background: url(https://cdn.shopify.com/s/files/1/0002/9949/9571/files/E18_Ingredients_Header_aec4ddf0-5639-408d-bec3-4aa697b7f991_1920x720.jpg?v=1537209286);
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+ 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(12px + 5vmin);
+  font-family: 'Merriweather', serif;
+  color: rgb(17, 7, 7);
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.empty-box {
+  display: flex;
+  size: 20px 
+}
+.url-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 18px;
+  font-size: calc(8px + 3vmin);
+  width: 90%;
+}
+.op-button {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 4px;
+      padding-right: 4px;
+      font-size: calc(4px + 3vmin);
+      width: 70%;
+    }
