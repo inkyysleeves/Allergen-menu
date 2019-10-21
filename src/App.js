@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Menu from './get-menu-info';
+
 
 
 const App = () => {
@@ -45,6 +47,7 @@ const App = () => {
           </div>
         </form>
       </h2>
+      <Menu />
     </div>
   );
 };
