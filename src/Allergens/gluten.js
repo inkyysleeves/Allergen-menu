@@ -1,7 +1,35 @@
-const glutens = [
-    '',
-    '',
+const  dairy = [
+    'creamy',
+    'cream',
+    'yogurt',
+    'yoghurt',
+    'cheese',
+    'Cheese',
+    'buttery',
+    'butter',
+    'buttered',
+    'raita',
+    'Paneer',
+    'paneer',
+    'Thermadour',
+    'cheesecake',
+    'mousse',
+    'Profiterole Tower',
+    'sundae',
+    'cake',
+    'omelette',
+    'Eggy',
+    'egg',
+    'Eggs',
+    'eggs',
+    'sautéed',
+    'Hollandaise',
+    'brioche',
+    'kulcha',
+    'nann',
+    'Nann',
 ];
+
 //compare the string against the array 
 //javascript basics arrays
-export default glutens;
+export default dairy;
