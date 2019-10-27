@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 class Form extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      urltoscan: 'https://zoukteabar.co.uk/menus/manchester/',
-            dish: '',
-            ingredients: ''
-    }
+      urltoscan: "https://zoukteabar.co.uk/menus/manchester/",
+      dish: "",
+      ingredients: ""
+    };
   }
   render() {
     return (
@@ -22,7 +22,9 @@ class Form extends React.Component {
                 Allergen:
                 <select>
                   <option value="peanut">Peanuts</option>
-                  <option value="cereals-containing-gluten">cereals containing gluten</option>
+                  <option value="cereals-containing-gluten">
+                    cereals containing gluten
+                  </option>
                   <option value="lupin">lupin</option>
                   <option value="crustaceans">crustaceans</option>
                   <option value="fish">fish</option>
@@ -52,15 +54,17 @@ class Form extends React.Component {
               </label>
             </div>
           </form>
-          <button onClick={() => this.props.handleGetIngredients(this.state.urltoscan) }>
+          <button
+            onClick={() =>
+              this.props.handleGetIngredients(this.state.urltoscan)
+            }
+          >
             test
           </button>
         </h2>
       </div>
-      
-    )};
+    );
+  }
 }
 
-    export default Form;
-
-  
+export default Form;

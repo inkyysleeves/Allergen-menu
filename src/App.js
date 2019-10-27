@@ -7,16 +7,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ingredients: '',
+      ingredients: ""
     };
   }
-  handleGetIngredients = (url) => {
+  handleGetIngredients = url => {
     Axios({
       method: "post",
       url: "http://localhost:3001/fetch-menu-items",
       data: {
         urltoscan: url
-      } 
+      }
     }).then(response => {
       this.setState({
         ingredients: response.data
@@ -25,7 +25,7 @@ class App extends React.Component {
   };
   render() {
     if (this.state.ingredients) {
-      return  <Menu ingredients={this.state.ingredients} /> 
+      return <Menu ingredients={this.state.ingredients} />;
     }
     return (
       <div className="App">
