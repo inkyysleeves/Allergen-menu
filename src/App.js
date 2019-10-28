@@ -10,28 +10,40 @@ class App extends React.Component {
       dishes: "",
       allergen: null,
       loading: false,
-      error: null,
+      error: null
     };
   }
   handleGetDishes = (url, allergen) => {
+    this.setState({
+      ...this.state,
+      loading: true
+    });
     Axios({
       method: "post",
       url: "http://localhost:3001/fetch-menu-items",
       data: {
         urltoscan: url
       }
-    }).then(response => {
-      this.setState({
-        dishes: response.data,
-        allergen: allergen
+    })
+      .then(response => {
+        this.setState({
+          dishes: response.data,
+          allergen: allergen,
+          loading: false
+        });
+      })
+      .catch(error => {
+        this.setState({
+          ...this.state,
+          error: "ot oh, something went wrong"
+        });
       });
-    })
-    .catch((error) => {
-        
-    })
   };
   render() {
-    if (this.state.dishes) {
+    if (this.state.loading || this.state.error) {
+      return <h1 className='loading-page'>loading...</h1>
+    }
+    if(this.state.dishes) {
       return <Menu dishes={this.state.dishes} allergen={this.state.allergen} />;
     }
     return (

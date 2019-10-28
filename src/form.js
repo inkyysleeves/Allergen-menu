@@ -18,7 +18,6 @@ class Form extends React.Component {
     });
   };
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <h2 className="App-header">
@@ -38,10 +37,21 @@ class Form extends React.Component {
                   onChange={event => this.handleFieldChange(event)}
                 >
                   <option value="dairy">Dairy</option>
-                  <option value="gluten">cereals containing gluten</option>
-                  <option value="lupin">lupin</option>
-                  <option value="crustaceans">crustaceans</option>
-                  <option value="fish">fish</option>
+                  <option value="eggs">Eggs</option>
+                  <option value="fish">Fish</option>
+                  <option value="crustacean">Crustaceans</option>
+                  <option value="celery">Celery</option>
+                  <option value="molluscs">Molluscs</option>
+                  <option value="mustard">Mustard</option>
+                  <option value="peanuts">Peanuts</option>
+                  <option value="tree-nuts">Tree Nuts</option>
+                  <option value="sesame-seeds">Sessame Seeds</option>
+                  <option value="soybeans">soybeans</option>
+                  <option value="sulphur-dioxide-sulphites">
+                    Sulphur dioxide / Sulphites
+                  </option>
+                  <option value="lupin">Lupin</option>
+                  <option value="gluten-wheat">Gluten / Wheat</option>
                 </select>
               </label>
             </div>
