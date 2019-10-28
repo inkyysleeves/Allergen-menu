@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "./get-menu-info";
+import Menu from "./getMenuInfo";
 import Axios from "axios";
 import Form from "./form";
 
@@ -7,10 +7,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      ingredients: ""
+      dishes: "",
+      allergen: null,
+      loading: false,
+      error: null,
     };
   }
-  handleGetIngredients = url => {
+  handleGetDishes = (url, allergen) => {
     Axios({
       method: "post",
       url: "http://localhost:3001/fetch-menu-items",
@@ -19,17 +22,21 @@ class App extends React.Component {
       }
     }).then(response => {
       this.setState({
-        ingredients: response.data
+        dishes: response.data,
+        allergen: allergen
       });
-    });
+    })
+    .catch((error) => {
+        
+    })
   };
   render() {
-    if (this.state.ingredients) {
-      return <Menu ingredients={this.state.ingredients} />;
+    if (this.state.dishes) {
+      return <Menu dishes={this.state.dishes} allergen={this.state.allergen} />;
     }
     return (
       <div className="App">
-        <Form handleGetIngredients={this.handleGetIngredients} />
+        <Form handleGetDishes={this.handleGetDishes} />
       </div>
     );
   }

@@ -5,58 +5,53 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      urltoscan: "https://zoukteabar.co.uk/menus/manchester/",
+      urltoscan: "",
+      allergen: "dairy",
       dish: "",
       ingredients: ""
     };
   }
+  handleFieldChange = event => {
+    this.setState({
+      ...this.state,
+      [event.target.name]: event.target.value
+    });
+  };
   render() {
+    console.log(this.state);
     return (
       <div className="App">
         <h2 className="App-header">
           Map My Menu.
           <form>
-            <input className="url-button" value="your restaurants url here" />
+            <input
+              className="url-button"
+              name="urltoscan"
+              value={this.state.urltoscan}
+              onChange={event => this.handleFieldChange(event)}
+            />
             <div>
               <label className="allergen-buttons">
                 Allergen:
-                <select>
-                  <option value="peanut">Peanuts</option>
-                  <option value="cereals-containing-gluten">
-                    cereals containing gluten
-                  </option>
+                <select
+                  name="allergen"
+                  onChange={event => this.handleFieldChange(event)}
+                >
+                  <option value="dairy">Dairy</option>
+                  <option value="gluten">cereals containing gluten</option>
                   <option value="lupin">lupin</option>
                   <option value="crustaceans">crustaceans</option>
                   <option value="fish">fish</option>
                 </select>
               </label>
             </div>
-            <div>
-              <label className="allergen-buttons">
-                Severity:
-                <select name="severity-button">
-                  <option value="mild">mild</option>
-                  <option value="moderate">moderate</option>
-                  <option value="severe">severe</option>
-                </select>
-              </label>
-            </div>
-            <div>
-              <label className="allergen-buttons">
-                Ommit:
-                <input className="op-button" value="whats your allergy" />
-              </label>
-            </div>
-            <div>
-              <label className="allergen-buttons">
-                prefference:
-                <input className="op-button" value="whats your prefference" />
-              </label>
-            </div>
           </form>
           <button
             onClick={() =>
-              this.props.handleGetIngredients(this.state.urltoscan)
+              this.props.handleGetDishes(
+                this.state.urltoscan,
+                this.state.allergen
+              )
             }
           >
             test
