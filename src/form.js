@@ -42,7 +42,6 @@ class Form extends React.Component {
                   <option value="crustacean">Crustaceans</option>
                   <option value="celery">Celery</option>
                   <option value="molluscs">Molluscs</option>
-                  <option value="mustard">Mustard</option>
                   <option value="peanuts">Peanuts</option>
                   <option value="tree-nuts">Tree Nuts</option>
                   <option value="sesame-seeds">Sessame Seeds</option>

@@ -41,7 +41,7 @@ class App extends React.Component {
   };
   render() {
     if (this.state.loading || this.state.error) {
-      return <h1 className='loading-page'>loading...</h1>
+      return <h1 className>loading...</h1>
     }
     if(this.state.dishes) {
       return <Menu dishes={this.state.dishes} allergen={this.state.allergen} />;
