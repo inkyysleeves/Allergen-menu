@@ -11,7 +11,8 @@ class App extends React.Component {
       dishes: "",
       allergen: null,
       loading: false,
-      error: null
+      error: null,
+      unsafeWords: null
     };
   }
   handleGetDishes = (url, allergen) => {

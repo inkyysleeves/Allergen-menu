@@ -20,6 +20,7 @@ const dairyOptions = [
   "omelette",
   "Eggy",
   "egg",
+  "lassi",
   "Eggs",
   "eggs",
   "sautéed",
