@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "./getMenuInfo";
 import Axios from "axios";
 import Form from "./form";
+import Spinner from './Spinner';
 
 class App extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class App extends React.Component {
   };
   render() {
     if (this.state.loading || this.state.error) {
-      return <h1 className='loading-page'>loading...</h1>
+      return <Spinner message="Please Wait, Menu Loading!" />
     }
     if(this.state.dishes) {
       return <Menu dishes={this.state.dishes} allergen={this.state.allergen} />;
