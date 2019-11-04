@@ -1,0 +1,11 @@
+.get-menu-info {
+  background: rgb(97, 136, 175);
+  padding: 25px;
+  margin: 5px;
+  text-align: center;
+}
+
+.text {
+  font-size: 15px;
+  color: brown;
+}
