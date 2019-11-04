@@ -10,7 +10,8 @@ class App extends React.Component {
       dishes: "",
       allergen: null,
       loading: false,
-      error: null
+      error: null,
+      unsafeWords: null
     };
   }
   handleGetDishes = (url, allergen) => {
@@ -41,7 +42,7 @@ class App extends React.Component {
   };
   render() {
     if (this.state.loading || this.state.error) {
-      return <h1 className>loading...</h1>
+      return <h1>loading...</h1>
     }
     if(this.state.dishes) {
       return <Menu dishes={this.state.dishes} allergen={this.state.allergen} />;

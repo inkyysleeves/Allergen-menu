@@ -7,8 +7,8 @@ const allergens = {
   dairy: dairyOptions,
   eggs: eggOptions,
   fish: fishOptions,
-  crustacean: crustaceansOptions
-  // other allergens lowercase
+  crustacean: crustaceansOptions,
+
 };
 
 const filterDishes = (dishes, allergen) => {
@@ -19,5 +19,6 @@ const filterDishes = (dishes, allergen) => {
     return !dishContainsAllergen;
   });
 };
+
 
 export default filterDishes;

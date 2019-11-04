@@ -1,9 +1,11 @@
 import React from "react";
 import filterDishes from "./filterDishes";
+import filterWords from './filterWords';
 
 const Menu = props => {
   const safeDishes = filterDishes(props.dishes, props.allergen);
-  return safeDishes.map(dish => {
+  const secondList= filterWords(safeDishes)
+  return secondList.map(dish => {
     return (
       <div>
         <h3 key={dish._id}>{dish.dish}</h3>
