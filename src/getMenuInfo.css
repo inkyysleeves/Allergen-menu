@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
 .mappedMenu{
-  background: rgb(253, 250, 233);
-  margin: 15px;
+   background: /*linear-gradient(rgba(242, 253, 253, 0.7), rgba(242, 253, 253, 0.7)), */
+     url(https://image.freepik.com/free-photo/ingredients-healthy-foods-selection-concept-healthy-food-set-up_35641-2941.jpg) center/cover no-repeat fixed;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -10,15 +13,22 @@
   flex-wrap: wrap;
 }
 .get-menu-info{
-  background-color: rgb(235, 194, 118);
+  background-color: rgba(245, 245, 245, 0.66);;
   width: 350px;
   height: auto;
-  border: 1px solid rgb(216, 108, 46);
+  border: 2px solid rgb(248, 245, 245);
   margin: 20px;
   padding: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  font-weight: 900;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 .dish-title {
+  font-size: 2em;
+  font-weight: 900;
   word-break: break-all;
+  font-family: 'Asap', sans-serif;
+  text-decoration: underline;
 }
 .text {
   font-size: 18px;
