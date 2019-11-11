@@ -2,7 +2,6 @@ import React from 'react';
 const Spinner = props => {
  return(
    <div className="ui active dimmer">
-     {/* From Semantic ui  */}
       <div className="ui large text loader">{props.message}</div>
    </div>
  )
