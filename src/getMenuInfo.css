@@ -17,6 +17,9 @@
   margin: 20px;
   padding: 20px;
 }
+.dish-title {
+  word-break: break-all;
+}
 .text {
   font-size: 18px;
   color: rgb(0, 0, 0);

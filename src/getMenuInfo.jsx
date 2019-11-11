@@ -12,7 +12,7 @@ const Menu = props => {
     <div className='mappedMenu'>{secondList.map(dish => {
     return (
       <div className="get-menu-info">
-        <h3 key={dish._id}>{dish.dish}</h3>
+        <h3 className="dish-title"key={dish._id}>{dish.dish}</h3>
         <span>{dish.ingredients}</span>
       </div>
     );
