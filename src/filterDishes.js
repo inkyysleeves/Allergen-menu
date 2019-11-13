@@ -14,7 +14,7 @@ const allergens = {
 const filterDishes = (dishes, allergen) => {
   return dishes.filter(d => {
     let dishContainsAllergen = allergens[allergen].some(option => {
-      return d.ingredients.toLowerCase().includes(option.toLowerCase());
+      return d.toLowerCase().includes(option.toLowerCase());
     });
     return !dishContainsAllergen;
   });

@@ -13,7 +13,7 @@ const filterWords = (dishes) => {
     return dishes.filter(d => {
         console.log(d);
         let dishContainsWord = unWantedWords.some(option => {
-            return d.ingredients.toLowerCase().includes(option.toLowerCase()) || d.dish.trim() === '';
+            return d.toLowerCase().includes(option.toLowerCase()) || d.trim() === '';
           });
           return !dishContainsWord;
     });
