@@ -22,8 +22,7 @@ class App extends React.Component {
     });
     Axios({
       method: "post",
-      // url: "https://allergen-menu-api.herokuapp.com/fetch-menu-items", 
-      url: "http://localhost:3002/fetch-menu-items",
+      url: "https://allergen-menu-api.herokuapp.com/fetch-menu-items", 
       data: {
         urltoscan: url
       }
