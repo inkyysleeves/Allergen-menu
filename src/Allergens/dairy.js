@@ -15,7 +15,7 @@ const dairyOptions = [
   "Thermadour",
   "cheesecake",
   "mousse",
-  "Profiterole Tower",
+  "Profiterole",
   "sundae",
   "cake",
   "omelette",

@@ -3,8 +3,7 @@ const crustaceansOptions = [
     "calamari",
     "shrimp",
     "king prawns",
-    "tiger prawn",
-    ""
+    "tiger prawn"
 
 ];
 export default crustaceansOptions;

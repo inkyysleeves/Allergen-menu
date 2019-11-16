@@ -30,11 +30,12 @@ class Form extends React.Component {
               onChange={event => this.handleFieldChange(event)}
             />
             <div>
-              <label className="allergen-buttons">
-                Allergen:
+              <p className="allergen-buttons">
+                Allergen </p>
                 <select
                   name="allergen"
                   onChange={event => this.handleFieldChange(event)}
+                  className="select-button"
                 >
                   <option value="dairy">Dairy</option>
                   <option value="eggs">Eggs</option>
@@ -52,7 +53,6 @@ class Form extends React.Component {
                   <option value="lupin">Lupin</option>
                   <option value="gluten-wheat">Gluten / Wheat</option>
                 </select>
-              </label>
             </div>
           </form>
           <button
@@ -61,9 +61,9 @@ class Form extends React.Component {
                 this.state.urltoscan,
                 this.state.allergen
               )
-            }
+            } className="button"
           >
-            Give me food.
+            Go.
           </button>
         </h2>
       </div>

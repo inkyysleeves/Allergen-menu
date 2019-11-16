@@ -3,7 +3,7 @@
 
 .mappedMenu{
    background: /*linear-gradient(rgba(242, 253, 253, 0.7), rgba(242, 253, 253, 0.7)), */
-     url(https://image.freepik.com/free-photo/ingredients-healthy-foods-selection-concept-healthy-food-set-up_35641-2941.jpg) center/cover no-repeat fixed;
+     url(https://cdn.shopify.com/s/files/1/0002/9949/9571/files/E18_Ingredients_Header_aec4ddf0-5639-408d-bec3-4aa697b7f991_1920x720.jpg?v=1537209286) center/cover no-repeat fixed;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -13,13 +13,13 @@
   flex-wrap: wrap;
 }
 .get-menu-info{
-  background-color: rgba(245, 245, 245, 0.66);;
+  background-color: rgba(245, 245, 245, 0.75);;
   width: calc(33.33% - 40px);
   height: auto;
   border: 2px solid rgb(248, 245, 245);
   margin: 20px;
   padding: 20px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.5);
   font-weight: 900;
   font-family: 'Hind Siliguri', sans-serif;
 }

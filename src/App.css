@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background: url(https://cdn.shopify.com/s/files/1/0002/9949/9571/files/E18_Ingredients_Header_aec4ddf0-5639-408d-bec3-4aa697b7f991_1920x720.jpg?v=1537209286);
+  text-align: center;
 }
 
 .App-logo {
@@ -8,24 +9,23 @@
 }
 
 .App-header {
- 
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   font-size: calc(12px + 5vmin);
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: rgb(17, 7, 7);
+  text-decoration: underline;
+}
+.url-button {
+  margin: 40px;
+}
+.select-button {
+  background-color: rgba(255, 255, 255, 0.548);
 }
 
-.App-link {
-  color: #09d3ac;
-}
-.empty-box {
-  display: flex;
-  size: 20px 
-}
 .url-button {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -35,10 +35,21 @@
   width: 90%;
 }
 .op-button {
-      padding-top: 3px;
-      padding-bottom: 3px;
-      padding-left: 4px;
-      padding-right: 4px;
-      font-size: calc(4px + 3vmin);
-      width: 30%;
-    }
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: calc(4px + 3vmin);
+  width: 30%;
+}
+.button {
+  background-color: rgba(90, 194, 77, 0.733);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

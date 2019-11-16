@@ -1,9 +1,6 @@
 const celery = [
-    "chilli sauce",
-    "chili sauce",
-    'starters',
-    'mains',
-    'desserts'
-
+   "celery",
+   "crudités",
+   "crudité"
 ];
 export default celery;
