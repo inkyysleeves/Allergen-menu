@@ -48,10 +48,10 @@ class Form extends React.Component {
                   <option value="sesame-seeds">Sessame Seeds</option>
                   <option value="soybeans">soybeans</option>
                   <option value="sulphur-dioxide-sulphites">
-                    Sulphur dioxide / Sulphites
+                    Sulphites
                   </option>
                   <option value="lupin">Lupin</option>
-                  <option value="gluten-wheat">Gluten / Wheat</option>
+                  <option value="gluten-wheat">Gluten </option>
                 </select>
             </div>
           </form>

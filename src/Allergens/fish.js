@@ -9,6 +9,7 @@ const fishOptions = [
     "mackerel",
     "fish",
     "fishy",
-    "bream"
+    "bream",
+    "anchovies"
 ];
 export default fishOptions;

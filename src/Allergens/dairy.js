@@ -29,7 +29,24 @@ const dairyOptions = [
   "brioche",
   "kulcha",
   "nann",
-  "Nann"
+  "Nann",
+  "mozzarella",
+  "cheddar",
+  "brie",
+  "milk",
+  "dairy",
+  "buttermilk",
+  "burrata",
+  "milky",
+  "cheesecake",
+  "milkshake",
+  "icecream",
+  "parmesan",
+  "formaggio",
+  "custard",
+  "ranch",
+  "cornbread",
+  "stuffed"
 ];
 
 export default dairyOptions;
