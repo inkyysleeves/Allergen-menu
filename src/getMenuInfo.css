@@ -14,7 +14,7 @@
 }
 .get-menu-info{
   background-color: rgba(245, 245, 245, 0.66);;
-  width: 350px;
+  width: calc(33.33% - 40px);
   height: auto;
   border: 2px solid rgb(248, 245, 245);
   margin: 20px;

@@ -5,6 +5,7 @@ const dairyOptions = [
   "yoghurt",
   "cheese",
   "Cheese",
+  "cheesy",
   "buttery",
   "butter",
   "buttered",
