@@ -51,7 +51,7 @@ class Form extends React.Component {
                   <option value="celery">Celery</option>
                   <option value="molluscs">Molluscs</option>
                   <option value="peanuts">Peanuts</option>
-                  <option value="tree-nuts">Tree nuts</option>
+                  <option value="tree-nuts">Treenuts</option>
                   <option value="sesame-seeds">Sessame Seeds</option>
                   <option value="soybeans">soybeans</option>
                   <option value="sulphur-dioxide-sulphites">Sulphites</option>
