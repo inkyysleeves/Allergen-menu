@@ -46,7 +46,11 @@ const dairyOptions = [
   "custard",
   "ranch",
   "cornbread",
-  "stuffed"
+  "stuffed",
+  "mascarpone",
+  "halloumi",
+  "hallumi",
+  "shake"
 ];
 
 export default dairyOptions;

@@ -4,6 +4,8 @@ import fishOptions from './Allergens/fish';
 import crustaceansOptions from "./Allergens/crustaceans";
 import celeryOptions from "./Allergens/celery";
 import molluscOptions from "./Allergens/molluscs"; 
+import peanutOptions from "./Allergens/peanuts";
+import treenutOptions from "./Allergens/treenuts";
 
 const allergens = {
   dairy: dairyOptions,
@@ -12,7 +14,8 @@ const allergens = {
   crustacean: crustaceansOptions,
   celery: celeryOptions,
   molluscs: molluscOptions,
-  
+  peanuts: peanutOptions,
+  treenuts: treenutOptions,
 };
 
 const filterDishes = (dishes, allergen) => {

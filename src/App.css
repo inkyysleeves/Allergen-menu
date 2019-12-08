@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  background: url(https://cdn.shopify.com/s/files/1/0002/9949/9571/files/E18_Ingredients_Header_aec4ddf0-5639-408d-bec3-4aa697b7f991_1920x720.jpg?v=1537209286);
-  text-align: center;
 }
 
 .App-logo {
@@ -17,13 +15,20 @@
   font-size: calc(12px + 5vmin);
   font-family: "Merriweather", serif;
   color: rgb(17, 7, 7);
-  text-decoration: underline;
+}
+.main-text {
+  animation: moveInLeft 0.5s ease-out 0.75s;
+}
+.sub-text {
+  animation: moveInRight 0.5s ease-out 0.75s;
+  animation-duration: 2s;
 }
 .url-button {
   margin: 40px;
 }
 .select-button {
   background-color: rgba(255, 255, 255, 0.548);
+  width: 325px, auto;
 }
 
 .url-button {
@@ -31,8 +36,11 @@
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 18px;
-  font-size: calc(8px + 3vmin);
-  width: 90%;
+  font-size: calc(13px + 3vmin);
+  width: 80%;
+}
+.allergen-buttons {
+  text-align: center;
 }
 .op-button {
   padding-top: 3px;
@@ -40,16 +48,67 @@
   padding-left: 4px;
   padding-right: 4px;
   font-size: calc(4px + 3vmin);
-  width: 30%;
+  width: 40%;
+}
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(85, 197, 122, 0.1),
+      rgba(40, 180, 133, 0.3)
+    ),
+    url(https://cdn.shopify.com/s/files/1/0002/9949/9571/files/E18_Ingredients_Header_aec4ddf0-5639-408d-bec3-4aa697b7f991_1920x720.jpg?v=1537209286);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+.sub-heading {
+  height: 30vh;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/JE_New_Logo.png);
+  background-size: cover;
+  background-position: 20% 35%;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 .button {
   background-color: rgba(90, 194, 77, 0.733);
   border: none;
-  color: rgb(255, 255, 255);
+  color: rgb(241, 234, 234);
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  margin-top: 50px;
   cursor: pointer;
+  font-weight: 600;
+  border-radius: 100px;
 }

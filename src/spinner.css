@@ -1,0 +1,6 @@
+.ui.active.spinner {
+    background-color: rgba(58, 194, 103, 0.658);
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+}
