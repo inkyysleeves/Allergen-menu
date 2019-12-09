@@ -8,6 +8,7 @@ const molluscOptions = [
     "squid",
     "octopus",
     "clams",
-    "snails"
+    "snails",
+    "'s"
 ];
 export default molluscOptions;

@@ -6,6 +6,13 @@ import celeryOptions from "./Allergens/celery";
 import molluscOptions from "./Allergens/molluscs"; 
 import peanutOptions from "./Allergens/peanuts";
 import treenutOptions from "./Allergens/treenuts";
+import sesameOptions from "./Allergens/sesameseeds";
+import soybeanOptions from "./Allergens/soybeans";
+import sulphiteOptions from "./Allergens/sulphites";
+import lupinOptions from "./Allergens/lupin";
+import glutenOptions from "./Allergens/gluten";
+import mustardOptions from "./Allergens/mustard";
+
 
 const allergens = {
   dairy: dairyOptions,
@@ -16,6 +23,12 @@ const allergens = {
   molluscs: molluscOptions,
   peanuts: peanutOptions,
   treenuts: treenutOptions,
+  sesameseeds: sesameOptions,
+  soy: soybeanOptions,
+  sulphurDioxides: sulphiteOptions,
+  lupin: lupinOptions,
+  wheatGluten: glutenOptions,
+  mustard: mustardOptions
 };
 
 const filterDishes = (dishes, allergen) => {

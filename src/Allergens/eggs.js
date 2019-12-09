@@ -15,6 +15,7 @@ const eggOptions = [
   "ice cream",
   "Profiterole",
   "sponge",
-  "cake"
+  "cake",
+  "'s"
 ];
 export default eggOptions;

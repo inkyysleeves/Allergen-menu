@@ -6,6 +6,7 @@ const treenutOptions = [
   "hazelnuts",
   "brazil",
   "brazilnuts",
-  "pistachios"
+  "pistachios",
+  "'s"
 ];
 export default treenutOptions;

@@ -50,7 +50,8 @@ const dairyOptions = [
   "mascarpone",
   "halloumi",
   "hallumi",
-  "shake"
+  "shake",
+  "'s"
 ];
 
 export default dairyOptions;

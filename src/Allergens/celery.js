@@ -1,6 +1,7 @@
 const celery = [
    "celery",
    "crudités",
-   "crudité"
+   "crudité",
+   "'s"
 ];
 export default celery;

@@ -17,11 +17,10 @@
   color: rgb(17, 7, 7);
 }
 .main-text {
-  animation: moveInLeft 0.5s ease-out 0.75s;
+  text-transform: capitalize;
 }
 .sub-text {
-  animation: moveInRight 0.5s ease-out 0.75s;
-  animation-duration: 2s;
+  text-transform: capitalize;
 }
 .url-button {
   margin: 40px;
@@ -87,11 +86,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(-1rem);
+    transform: translateX(1rem);
   }
 
   100% {

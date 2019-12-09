@@ -6,6 +6,7 @@ const glutenOptions = [
   "pizza",
   "roti",
   "chapatti",
+  "chapati",
   "pasta",
   "biscuit",
   "bechemel",
@@ -15,11 +16,14 @@ const glutenOptions = [
   "durum",
   "spelt",
   "couscous",
-  "cous cous",
+  "cous",
   "bulgur",
   "tabbouleh",
   "tempura",
-  "breaded"
+  "breaded",
+  "bread",
+  "soy",
+  "'s"
 ];
 
 export default glutenOptions;

@@ -1,5 +1,6 @@
 const peanutOptions = [
   "peanuts",
-  "legume"
+  "legume",
+  "'s"
 ];
 export default peanutOptions;

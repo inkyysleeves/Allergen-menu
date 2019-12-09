@@ -51,12 +51,13 @@ class Form extends React.Component {
                   <option value="celery">Celery</option>
                   <option value="molluscs">Molluscs</option>
                   <option value="peanuts">Peanuts</option>
-                  <option value="tree-nuts">Treenuts</option>
-                  <option value="sesame-seeds">Sessame Seeds</option>
-                  <option value="soybeans">soybeans</option>
-                  <option value="sulphur-dioxide-sulphites">Sulphites</option>
+                  <option value="treenuts">Treenuts</option>
+                  <option value="sesameseeds">Sesame Seeds</option>
+                  <option value="soy">Soy</option>
+                  <option value="sulphurDioxides">Sulphites/sulphur</option>
                   <option value="lupin">Lupin</option>
-                  <option value="gluten-wheat">Gluten </option>
+                  <option value="wheatGluten">Gluten </option>
+                  <option value="mustard">Mustard</option>
                 </select>
               </div>
             </form>
